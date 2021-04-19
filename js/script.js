@@ -139,3 +139,8 @@ document.addEventListener('keypress', event => {
         swapPlayer();
     }
 });
+
+document.querySelector('#set_time').addEventListener("input", (e) => {
+    document.querySelector('#min1').textContent = e.target.value;
+    document.querySelector('#min2').textContent = e.target.value;
+});
